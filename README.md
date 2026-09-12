@@ -8,7 +8,7 @@
 [![macOS](https://img.shields.io/badge/macOS-Sonoma%2014.5-000000?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/macos/sonoma/)
 [![Laptop](https://img.shields.io/badge/MSI-GF75%20Thin%2010UC-FF6B00?style=for-the-badge&logo=msi&logoColor=white)](https://www.msi.com/)
 [![License](https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/smartmaster35rus-dev/MacOS-EFI-MSI-GF75-Thin-10UC?style=for-the-badge&label=Download&color=E74C3C&logo=github)](https://github.com/smartmaster35rus-dev/MacOS-EFI-MSI-GF75-Thin-10UC/releases/latest)
+[![Release](https://img.shields.io/badge/Download-v1.0.0-E74C3C?style=for-the-badge&logo=github&logoColor=white)](https://github.com/smartmaster35rus-dev/MacOS-EFI-MSI-GF75-Thin-10UC/releases/latest)
 
 **Готовый EFI-загрузчик Hackintosh для MSI GF75 Thin 10UC-048XRU**  
 *Intel Comet Lake · UHD 630 · RTX 3050 · AX201 Wi-Fi 6*
