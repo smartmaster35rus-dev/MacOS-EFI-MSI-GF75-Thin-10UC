@@ -1,0 +1,23 @@
+DefinitionBlock ("", "SSDT", 2, "HACK", "IGPU", 0)
+{
+    External (_SB_.PCI0.IGPU, DeviceObj)
+    
+    Scope (_SB.PCI0.IGPU)
+    {
+        Method (_DSM, 4, NotSerialized)
+        {
+            If (Arg2 == Zero) { Return (Buffer() { 0x03 } ) }
+            Return (Package()
+            {
+                "AAPL,ig-platform-id", Buffer() { 0x00, 0x64, 0x00, 0x00 },
+                "device-id", Buffer() { 0x64, 0x05, 0x00, 0x00 },
+                "framebuffer-patch-enable", Buffer() { 0x01, 0x00, 0x00, 0x00 },
+                "framebuffer-memorycount", Buffer() { 0x03, 0x00, 0x00, 0x00 },
+                "framebuffer-fbmem", Buffer() { 0x00, 0x00, 0x90, 0x00 },
+                "framebuffer-stolenmem", Buffer() { 0x00, 0x00, 0x30, 0x01 }, // 12MB
+                "framebuffer-unifiedmem", Buffer() { 0x00, 0x00, 0x80, 0x00 },
+                "hda-gfx", Buffer() { "onboard-1" },
+            })
+        }
+    }
+}

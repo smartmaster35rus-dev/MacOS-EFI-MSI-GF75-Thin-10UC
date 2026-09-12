@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.metadata_never_index
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Build / release artifacts
+release-staging/
+*.zip
+
+# OpenCore backups
+OC/config*.txt
+OC/._*
